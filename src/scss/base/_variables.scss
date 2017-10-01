@@ -1,0 +1,68 @@
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+
+
+$tiny:                       480px;
+$xsmall:                     640px;
+$small:                      768px;
+$medium:                     960px;
+$regular:                    1024px;
+$large:                      1280px;
+$xlarge:                     1440px;
+$xxlarge:                    1550px;
+$huge:                       1650px;
+
+
+
+
+// ==========================================================================
+// Paths
+// ==========================================================================
+
+$asset-base-path: '../<%= assetsDir %>';
+$asset-images-path: '<%= imgDir %>';
+$asset-fonts-path: '<%= fontDir %>';
+
+
+
+
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+$black:                      #000;
+$white:                      #fff;
+
+
+
+// ==========================================================================
+// Fonts
+// ==========================================================================
+
+$default-font-size:          14px;
+$default-line-height:        1.42857143;
+$default-background-color:   #fff;
+
+// @font-face {
+//     font-family: 'bakeryregular';
+//     src: url('../fonts/bakery-webfont.woff2') format('woff2'),
+//          url('../fonts/bakery-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// ==========================================================================
+// Body and HTML
+// ==========================================================================
+// Font option: font-family: 'Roboto', sans-serif;
+// Font option: font-family: 'Lato', sans-serif;
+
+body, html {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+    color: $black;
+    background-color: $default-background-color;
+}

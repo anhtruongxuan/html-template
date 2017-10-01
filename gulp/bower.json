@@ -1,0 +1,25 @@
+{
+  "name": "crm-static",
+  "version": "0.0.1",
+  "authors": [
+    "thinhnd"
+  ],
+  "description": "gce-static",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "thinh.ngodinh@elinext.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.7"
+  }
+}

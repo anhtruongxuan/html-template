@@ -1,0 +1,17 @@
+extends templates/layout
+
+
+//- Variables
+block append vars
+  - var lang                  = 'nl'
+  - var pageTitle             = 'Prost | Home page'
+  - var pageDescription       = 'home page'
+  - var bodyClass             = 'page'
+
+
+
+
+
+block contentMain
+  include templates/views/sections/header.pug
+  include templates/views/sections/footer.pug

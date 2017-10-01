@@ -1,0 +1,77 @@
+{
+  "projectURL": "mynewawesomeapp.localhost",
+  "browsersync": {
+    "server": "../dist"
+  },
+  "postcss": {
+    "src": "../dist/assets/styles/style.css",
+    "build": "../dist/assets/styles/"
+  },
+  "images": {
+    "src": "../src/images/**/*",
+    "build": "../dist/assets/images/"
+  },
+  "fonts": {
+    "src": "../src/fonts/**/*",
+    "build": "../dist/assets/fonts/"
+  },
+  "uploads": {
+    "src": "../src/uploads/**/*",
+    "build": "../dist/assets/uploads/"
+  },
+  "html": {
+    "src": "../dist/**/*.html",
+    "build": "../dist/"
+  },
+  "pug": {
+    "src": "../src/pug/*.pug",
+    "watch": "../src/pug/**/*.pug",
+    "build": "../dist/"
+  },
+  "tasks": {
+    "main": [
+      "html",
+      "images",
+      "uploads",
+      "fonts",
+      "scripts",
+      "styles", 
+      "plugins"
+    ],
+    "default": [
+      "main",
+      "watch",
+      "browser-sync"
+    ],
+    "build": [
+      "main",
+      "html-build",
+      "scripts-build",
+      "styles-build",
+      "plugins-build",
+      "removeDevFiles"
+    ]
+  },
+  "styles": {
+    "src": "../src/scss/style.scss",
+    "src_files": "../src/scss/**/*.scss",
+    "build_srcsmap": "../dist/assets/styles/",
+    "build": "../dist/assets/styles/",
+    "src_lib": "../dist/assets/styles/**/*.css",
+    "build_lib": "../dist/assets/styles/"
+  },
+  "prefix": "prfx-",
+  "browsers": "last 3 versions, > 1%",
+  "scripts": {
+    "src": "../src/js/*.js",
+    "build": "../dist/assets/js",
+    "src_lib": "../dist/assets/js/lib/**/*.js",
+    "build_lib": "../dist/assets/js/lib/"
+  },
+  "plugins": {
+    "src": "../src/js/plugins/*.js",
+    "build": "../dist/assets/js/lib/",
+    "src_lib": "../dist/assets/js/lib/**/*.js",
+    "build_lib": "../dist/assets/js/lib/"
+  }
+}
